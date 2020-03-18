@@ -65,6 +65,7 @@ model1 = nw_hac(x, y)
 print('Value of Standard Error is {0}'.format(model1.se))
 print('Value of T-Statistics is {0}'.format(model1.tstat))
 
+# output verification from standard python package.
 import statsmodels.formula.api as smf
 
 df = pd.DataFrame({'a':x.flatten(), 'b':y.flatten()})
